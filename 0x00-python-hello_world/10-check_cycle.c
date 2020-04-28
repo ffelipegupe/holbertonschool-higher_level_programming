@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
  * check_cycle - function that checks if a singly linked list has a cycle
  * @list: list to check
@@ -17,7 +17,7 @@ int check_cycle(listint_t *list)
 	{
 		if (back == forth)
 			return (1);
-		forth = forth->next->next;
+		forth = (forth->next)->next;
 		back = back->next;
 	}
 	return (0);
