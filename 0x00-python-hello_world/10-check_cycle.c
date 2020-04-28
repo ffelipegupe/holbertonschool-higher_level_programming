@@ -15,10 +15,10 @@ int check_cycle(listint_t *list)
 		return (0);
 	while (back && forth && forth->next)
 	{
-		if (back == forth)
+		if (forth == back)
 			return (1);
-		back = back->next;
 		forth = forth->next->next;
+		back = back->next;
 	}
 	return (0);
 }
