@@ -17,8 +17,8 @@ int check_cycle(listint_t *list)
 	{
 		if (back == forth)
 			return (1);
-		forth = forth->next->next;
 		back = back->next;
+		forth = forth->next->next;
 	}
 	return (0);
 }
