@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * check_cucle - function that checks if a singly linked list has a cycle
  * @list: list to check
@@ -7,11 +8,11 @@
  **/
 int check_cycle(listint_t *list)
 {
-	if (list == NULL)
-		return (0)
 	listint_t *back = list;
 	listint_t *forth = list->next;
 
+	if (list == NULL)
+		return (0);
 	while (back && forth && forth->next)
 	{
 		if (back == forth)
