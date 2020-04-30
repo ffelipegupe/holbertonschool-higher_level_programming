@@ -15,7 +15,7 @@ def main():
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
         elif sys.argv[2] == '+':
-            sum = add(a,b)
+            sum = add(a, b)
             print("{} {} {} = {}".format(a, sys.argv[2], b, sum))
         elif sys.argv[2] == '-':
             res = sub(a, b)
