@@ -6,4 +6,4 @@ print("{} + {} = {}".format(a, b, add(a, b)))
 
 if __name__ == "__main__":
     import sys
-    add(int(sys.arg[1]))
+    add(int(sys.arg[2]))
