@@ -1,0 +1,14 @@
+# List of functions:
+- print_list_integer - function that prints all integers of a list.
+- element_at - function that retrieves an element from a list like in C.
+- replace_in_list - function that replaces an element of a list at a specific position (like in C).
+- print_reversed_list_integer - function that prints all integers of a list, in reverse order.
+- new_in_list -  function that replaces an element in a list at a specific position without modifying the original list (like in C).
+- no_c - function that removes all characters c and C from a string.
+- print_matrix_integer - unction that prints a matrix of integers.
+- add_tupple - function that adds 2 tuples.
+- multiple_returns - function that returns a tuple with the length of a string and its first character.
+- max_integer - function that finds the biggest integer of a list.
+- divisible_by_2 - unction that finds all multiples of 2 in a list.
+- delete_at - function that deletes the item at a specific position in a list.
+- is_palindrome - function in C that checks if a singly linked list is a palindrome.
