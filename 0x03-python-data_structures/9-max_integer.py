@@ -7,6 +7,6 @@ def max_integer(my_list=[]):
     return max
 
 
-my_list = [1, 2, 1, 34, 5, -13, 40]
+my_list = [1, 2, 3, 90, 34, 5, -13, 40]
 max_value = max_integer(my_list)
 print("Max: {}".format(max_value))
