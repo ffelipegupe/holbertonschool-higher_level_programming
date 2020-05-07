@@ -2,4 +2,4 @@
 def update_dictionary(a_dictionary, key, value):
     d1 = {key: value}
     a_dictionary.update(d1)
-    return new
+    return a_dictionary
