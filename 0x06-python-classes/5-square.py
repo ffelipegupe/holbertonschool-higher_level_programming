@@ -27,7 +27,7 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        '''Instance method that prints in stdout the square with the character #'''
+        '''Instance method that prints in stdout the square #'''
         if self.__size == 0:
             print()
         else:
