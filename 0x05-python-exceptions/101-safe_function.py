@@ -4,7 +4,7 @@ import sys
 
 def safe_function(fct, *args):
     try:
-        res = fct(*args)        
+        res = fct(*args)
     except Exception as e:
         res = None
         print("Exception:", e, file=sys.stderr)
