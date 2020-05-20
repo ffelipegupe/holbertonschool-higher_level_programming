@@ -69,3 +69,4 @@ class Square:
         else:
             str += "\n"
         return str[:-1]
+        
