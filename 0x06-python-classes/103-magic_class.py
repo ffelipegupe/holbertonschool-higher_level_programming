@@ -2,6 +2,7 @@
 import math
 '''Library math'''
 
+
 class MagicClass:
     '''Circle class'''
     def __init__(self, radius=0):
