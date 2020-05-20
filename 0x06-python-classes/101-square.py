@@ -55,17 +55,17 @@ class Square:
 
 def __str__(self):
     '''Instance to print'''
-        str = ""
-        if self.__size != 0:
-            for k in range(self.__position[1]):
-                str += "\n"
-
-            for i in range(self.__size):
-                for l in range(self.__position[0]):
-                    str += " "
-                for j in range(self.__size):
-                    str += "#"
-                str += "\n"
-        else:
+    str = ""
+    if self.__size != 0:
+        for k in range(self.__position[1]):
             str += "\n"
-        return str[:-1]
+
+        for i in range(self.__size):
+            for l in range(self.__position[0]):
+                str += " "
+            for j in range(self.__size):
+                str += "#"
+            str += "\n"
+    else:
+        str += "\n"
+    return str[:-1]
