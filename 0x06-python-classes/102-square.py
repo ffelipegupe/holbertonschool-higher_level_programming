@@ -29,7 +29,7 @@ class Square:
     def __gt__(self, square2):
         '''Method: greater than comparison'''
         return self.area() > square2.area()
-    
+
     def __ge__(self, square2):
         '''Method: greater than or equal comparison'''
         return self.area() >= square2.area()
