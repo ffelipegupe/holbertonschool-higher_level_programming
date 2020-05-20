@@ -5,7 +5,6 @@ import math
 
 class MagicClass:
     '''Circle class'''
-
     def __init__(self, radius=0):
         '''Circle class instantiation'''
         self.__radius = 0
