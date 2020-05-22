@@ -49,18 +49,12 @@ NameError: name 'string' is not defined
 >>> add_integer("string")
 Traceback (most recent call last):
 ...
-TypeError: can only concatenate str (not "int") to str
+TypeError: a must be an integer
 
 >>> add_integer()
 Traceback (most recent call last):
 ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
-
->>> add_integer(,)
-File ".\0-add_integer.py", line 5
-   print(add_integer(,))
-                     ^
-SyntaxError: invalid syntax
 
 >>> add_integer(a, 9)
 Traceback (most recent call last):
@@ -76,12 +70,6 @@ NameError: name 'b' is not defined
 Traceback (most recent call last):
 ...
 NameError: name 'a' is not defined
-
->>> add_integer(, b)
-File ".\0-add_integer.py", line 5
-   print(add_integer(, b))
-                     ^
-SyntaxError: invalid syntax
 
 >>> add_integer(a, )
 Traceback (most recent call last):
@@ -112,8 +100,8 @@ inf
 >>> add_integer(-float('inf'))
 -inf
 
->>> add_integer(2, -float('inf')
+>>> add_integer(2, -float('inf'))
 -inf
 
->>> add_integer(2, float('inf')
+>>> add_integer(2, float('inf'))
 inf
