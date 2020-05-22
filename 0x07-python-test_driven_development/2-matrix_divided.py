@@ -26,3 +26,7 @@ def matrix_divided(matrix, div):
             if not isinstance(m, (int, float)):
                 raise TypeError(matrixError)
     return [[round(x / div, 2) for x in y] for y in matrix]
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testfile("./tests/2-matrix_divided.txt")
