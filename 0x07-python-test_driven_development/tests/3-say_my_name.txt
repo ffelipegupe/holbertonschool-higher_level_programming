@@ -10,7 +10,7 @@ My name is John Smith
 My name is Walter White
 
 >>> say_my_name("Bob")
-My name is Bob
+My name is Bob 
 
 >>> say_my_name("White", 12)
 Traceback (most recent call last):
@@ -71,7 +71,7 @@ Traceback (most recent call last):
 TypeError: say_my_name() missing 1 required positional argument: 'first_name' 
 
 >>> say_my_name("")
-My name is
+My name is 
 
 >>> say_my_name("[notTuple]", "(notList)")
 My name is [notTuple] (notList)
