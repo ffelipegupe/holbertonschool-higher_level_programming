@@ -1,0 +1,74 @@
+""" 5-text_indentation test function """
+
+""" importing main function """
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("""hello.""")
+hello.
+<BLANKLINE>
+
+>>> text_indentation("""hello?""")
+hello?
+<BLANKLINE>
+
+>>> text_indentation("""hello:""")
+hello:
+<BLANKLINE>
+
+>>> text_indentation("""hello: hola""")
+hello:
+<BLANKLINE>
+hola
+
+>>> text_indentation("""hello? hola""")
+hello?
+<BLANKLINE>
+hola
+
+>>> text_indentation("""hello. hola""")
+hello.
+<BLANKLINE>
+hola
+
+>>> text_indentation("""hello, hola""")
+hello, hola
+
+>>> text_indentation(""".""")
+.
+<BLANKLINE>
+
+>>> text_indentation("""\n hola. hello, no?""")
+<BLANKLINE>
+hola.
+<BLANKLINE>
+hello, no?
+
+>>> text_indentation("""  1.1?""")
+1.
+<BLANKLINE>
+1?
+<BLANKLINE>
+
+>>> text_indentation({})
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation([])
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(())
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(""" text indentation \n . here, ? :""")
+ text indentation
+.
+<BLANKLINE>
+here, ?
+<BLANKLINE>
+:
+<BLANKLINE>
