@@ -19,7 +19,7 @@ def text_indentation(text):
             sentence += i
         if i == '.' or i == '?' or i == ':':
             sentence = sentence.strip(" ")
-            print("{}".format(sentence), end ="")
+            print("{}".format(sentence), end="")
             print("\n")
             sentence = ""
     sentence = sentence.strip(" ")
