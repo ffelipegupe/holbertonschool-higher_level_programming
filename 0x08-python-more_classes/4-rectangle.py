@@ -50,9 +50,8 @@ class Rectangle:
 
     def __str__(self):
         """String method"""
-        str = ""
         if self.__width == 0 or self.__height == 0:
-            return str
+            return ""
         lenght = "#" * self.__width
         return (lenght + "\n") * (self.__height - 1) + lenght
 
