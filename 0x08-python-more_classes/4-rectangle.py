@@ -59,4 +59,4 @@ class Rectangle:
         """String representation of a rectangle using eval()"""
         str_w = str(self.__width)
         str_h = str(self.__height)
-        return "Rectangle(" + str_w + "," + str_h + ")"
+        return "Rectangle(" + str_w + ", " + str_h + ")"
