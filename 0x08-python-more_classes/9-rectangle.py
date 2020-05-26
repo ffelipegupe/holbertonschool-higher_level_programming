@@ -74,9 +74,8 @@ class Rectangle:
 
     def __str__(self):
         """String method"""
-        str_ing = ""
         if self.__width == 0 or self.__height == 0:
-            return str_ing
+            return ""
         lenght = str(self.print_symbol) * self.__width
         return (lenght + "\n") * (self.__height - 1) + lenght
 
