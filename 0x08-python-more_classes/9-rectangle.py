@@ -89,4 +89,3 @@ class Rectangle:
         """
         cls.number_of_instances += 1
         return cls(size, size)
-        
