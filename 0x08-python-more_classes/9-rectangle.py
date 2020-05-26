@@ -30,8 +30,8 @@ class Rectangle:
         """Class method that returns a new Rectangle
         with width == height == size
         """
-        Rectangle.number_of_instances += 1
-        return Rectangle(size, size)
+        cls.number_of_instances += 1
+        return cls(size, size)
 
     @property
     def height(self):
