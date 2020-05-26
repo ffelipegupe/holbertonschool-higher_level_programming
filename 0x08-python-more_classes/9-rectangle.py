@@ -11,7 +11,7 @@ class Rectangle:
         """Instantiation with optional width and height"""
         self.height = height
         self.width = width
-        Rectangle.number_of_instances += 1
+        type(self).number_of_instances += 1
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -78,7 +78,7 @@ class Rectangle:
 
     def __del__(self):
         """del method"""
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
 
     @classmethod
