@@ -31,7 +31,7 @@ class Rectangle:
         with width == height == size
         """
         cls.number_of_instances += 1
-        return cls(size, size)
+        return Rectangle(size, size)
 
     @property
     def height(self):
