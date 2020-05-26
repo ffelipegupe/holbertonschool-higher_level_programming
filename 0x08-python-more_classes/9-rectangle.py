@@ -30,6 +30,7 @@ class Rectangle:
         """Class method that returns a new Rectangle
         with width == height == size
         """
+        cls.number_of_instances += 1
         return cls(size, size)
 
     @property
