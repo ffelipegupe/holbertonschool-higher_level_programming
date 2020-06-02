@@ -11,3 +11,6 @@ class Square(Rectangle):
         '''Instantiation'''
         super().integer_validation("size", size)
         super().__init__(size, size)
+
+    def area(self):
+        return self.__size * self.__size
