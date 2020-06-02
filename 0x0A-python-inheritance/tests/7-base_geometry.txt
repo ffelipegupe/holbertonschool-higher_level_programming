@@ -1,0 +1,72 @@
+'''7-base_geometry tests'''
+
+'''importing main function'''
+>>> BaseGeomatry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", "John")
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 2.5)
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", "John")
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", a)
+Traceback (most recent call last):
+NameError: name 'a' is not defined
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 0)
+Traceback (most recent call last):
+ValueError: my_int must be greater than 0
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 0)
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", -20)
+Traceback (most recent call last):
+ValueError: my_int must be greater than 0
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", float('inf'))
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 10)
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", True)
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", None)
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", {'Jhon': 'Juan'})
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", [1, 2])
+Traceback (most recent call last):
+TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", (1, 2))
+Traceback (most recent call last):
+TypeError: my_int must be an integer
