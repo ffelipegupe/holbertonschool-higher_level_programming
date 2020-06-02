@@ -11,6 +11,7 @@ class Square(Rectangle):
         '''Instantiation'''
         super().integer_validator("size", size)
         super().__init__(size, size)
+        self.__size = size
 
     def __str__(self):
         '''Returns a string representation'''
