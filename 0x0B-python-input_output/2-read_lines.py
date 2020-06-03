@@ -9,7 +9,6 @@ def read_lines(filename="", nb_lines=0):
     """
     with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
-        print(len(lines))
         if nb_lines <= 0 or nb_lines >= len(lines):
             for line in lines:
                 print("{}".format(line), end="")
