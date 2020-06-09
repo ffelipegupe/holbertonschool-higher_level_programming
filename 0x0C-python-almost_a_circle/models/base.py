@@ -31,7 +31,7 @@ class Base:
         """Class method that writes the JSON string representation"""
         new_list = []
         filename = cls.__name__ + ".json"
-        if list_objs is not None or len(list_objs) == 0:
+        if list_objs is not None:
             for obj in list_objs:
                 new_list.append(obj.to_dictionary())
         with open(filename, 'w') as file:
