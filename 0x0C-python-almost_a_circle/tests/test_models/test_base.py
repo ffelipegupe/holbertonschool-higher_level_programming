@@ -19,7 +19,7 @@ class TestPep8Base(unittest.TestCase):
         guide = pep8.StyleGuide(quite=True)
         file = 'models/base.py'
         file1 = 'tests/test_models/test_base.py'
-        res = style.check_files([file, file1])
+        res = guide.check_files([file, file1])
         self.assertEqual(res.total_errors, 0, "Erros/Warnings.")
 
 class BaseTest(unittest.TestCase):
