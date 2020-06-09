@@ -42,7 +42,7 @@ class Base:
         """Static method that returns the list of the
             JSON string representation json_string
         """
-        if json_string is None:
+        if json_string is None or le(json_string) == 0:
             return []
         else:
             return json.dumps(json_string)
