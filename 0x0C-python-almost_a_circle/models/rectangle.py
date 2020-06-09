@@ -89,7 +89,7 @@ class Rectangle(Base):
         a = type(self).__name__
         b = self.id
         c = self.x
-        d= self.y
+        d = self.y
         e = self.width
         f = self.height
         return "[{}] ({}) {}/{} - {}/{}".format(a, b, c, d, e, f)

@@ -12,24 +12,24 @@ class Square(Rectangle):
         """Instantiation
         """
         super().__init__(size, size, x, y, id)
-    
+
     @property
     def size(self):
         """size getter"""
         return self.width
-    
+
     @size.setter
     def size(self, value):
         """size setter"""
         self.width = value
         self.height = value
-    
+
     def __str__(self):
         """__str__ overriding"""
         a = type(self).__name__
         b = self.id
         c = self.x
-        d= self.y
+        d = self.y
         e = self.size
         return "[{}] ({}) {}/{} - {}".format(a, b, c, d, e)
 
