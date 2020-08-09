@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ All states via SQLAlchemy """
+
 from model_state import Base, State
 from sys import argv
 from sqlalchemy import create_engine
