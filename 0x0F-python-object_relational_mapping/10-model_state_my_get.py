@@ -13,8 +13,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State):
-        if state.name == argv[4]:
+    state = session.query(State).filter_by(name=argv[4]).first()
+    if state is not None:
             print("{}".format(state.id))
         else:
             print("Not found")
