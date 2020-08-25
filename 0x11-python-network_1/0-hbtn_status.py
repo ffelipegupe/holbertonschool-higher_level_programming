@@ -5,7 +5,6 @@ Python script that fetches https://intranet.hbtn.io/status
 import urllib.request
 
 
-
 req = urllib.request.Request('https://intranet.hbtn.io/status')
 with urllib.request.urlopen(req) as response:
     data = response.read()
