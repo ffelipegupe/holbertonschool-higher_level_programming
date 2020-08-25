@@ -10,5 +10,5 @@ import sys
 if __name__ == "__main__":
     usr = sys.argv[1]
     psw = sys.argv[2]
-    req = requests.get('https://api.github.com/user', aut=(usr, psw))
+    req = requests.get('https://api.github.com/user', auth=(usr, psw))
     print(req.json().get('id'))
