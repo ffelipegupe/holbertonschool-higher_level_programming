@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // JS Warm up
 
-const args = process.argv.length:
+const args = process.argv.length;
 if (args === 2) {
     console.log('No argument');
 } else if (args === 3) {
