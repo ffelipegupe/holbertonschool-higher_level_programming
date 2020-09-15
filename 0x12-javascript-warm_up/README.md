@@ -1,0 +1,8 @@
+# JavaScript warm up, tasks:
+-
+-
+-
+-
+-
+-
+-
