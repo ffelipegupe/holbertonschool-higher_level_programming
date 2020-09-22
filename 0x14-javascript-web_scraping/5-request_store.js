@@ -8,7 +8,7 @@ request(`${process.argv[2]}`, (err, response, body) => {
     console.log(err);
   } else {
     const bod = body;
-    fs.writeFile(`./${process.argv[3]}`, bod, 'utf8', (err) => {
+    fpath.writeFile(`./${process.argv[3]}`, bod, 'utf8', (err) => {
 	    if (err) {
         console.log(err);
 	    }
